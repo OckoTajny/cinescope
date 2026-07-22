@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { id } = await params;
   const genres = await getGenres();
   const genre = genres.find((g) => String(g.id) === id);
-  return { title: `${genre?.name ?? "Genre"} Movies — Cinescope` };
+  return { title: `${genre?.name ?? "Genre"} Movies – Cinescope` };
 }
 
 export default async function GenrePage({ params }: { params: Promise<Params> }) {

@@ -15,7 +15,7 @@ export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   return params.then(({ slug }) => ({
-    title: `${BROWSE_CONFIG[slug]?.title ?? "Browse"} — Cinescope`,
+    title: `${BROWSE_CONFIG[slug]?.title ?? "Browse"} – Cinescope`,
   }));
 }
 

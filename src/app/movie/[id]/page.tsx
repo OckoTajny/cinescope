@@ -24,15 +24,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const movie = await fetchMovie(id);
-  if (!movie) return { title: "Movie not found — Cinescope" };
+  if (!movie) return { title: "Movie not found – Cinescope" };
   return {
-    title: `${movie.title} — Cinescope`,
+    title: `${movie.title} – Cinescope`,
     description: movie.overview,
   };
 }
 
 function formatRuntime(minutes: number): string {
-  if (!minutes) return "—";
+  if (!minutes) return "–";
   const hours = Math.floor(minutes / 60);
   const mins = minutes % 60;
   return `${hours}h ${mins}m`;

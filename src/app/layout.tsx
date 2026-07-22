@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Cinescope — Discover movies",
+  title: "Cinescope – Discover movies",
   description:
     "Browse trending, popular, and top-rated movies powered by The Movie Database.",
 };

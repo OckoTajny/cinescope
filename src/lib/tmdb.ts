@@ -128,7 +128,7 @@ export function getProfileUrl(path: string | null): string | null {
 }
 
 export function getYear(dateStr: string): string {
-  return dateStr ? dateStr.slice(0, 4) : "—";
+  return dateStr ? dateStr.slice(0, 4) : "–";
 }
 
 export function getTrailer(videos: { results: Video[] }): Video | undefined {
